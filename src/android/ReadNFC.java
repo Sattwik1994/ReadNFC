@@ -37,7 +37,7 @@ public class ReadNFC extends CordovaPlugin {
     private void readNFC(CallbackContext callbackContext) {
         try {
             callbackContext.success("This plugin reads NFC cards");
-        } catch {
+        } catch(Exception e) {
             callbackContext.error("Something went wrong.");
         }
     }
