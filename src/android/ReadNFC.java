@@ -1,4 +1,4 @@
-package cordova-plugin-read-nfc;
+package cordova.plugin.read.nfc;
 
 import org.apache.cordova.CordovaPlugin;
 import org.apache.cordova.CallbackContext;
