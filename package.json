@@ -1,0 +1,11 @@
+{
+  "name": "readnfc",
+  "version": "1.0.0",
+  "description": "This plugin reads memory sector of RFID cards",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Sattwik Biswas",
+  "license": "ISC"
+}

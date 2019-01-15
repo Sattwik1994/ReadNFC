@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<plugin id="cordova-plugin-read-nfc" version="0.0.1"
+    xmlns="http://apache.org/cordova/ns/plugins/1.0"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <name>ReadNFC</name>
+
+    <js-module name="ReadNFC" src="www/ReadNFC.js">
+        <clobbers target="cordova.plugins.ReadNFC" />
+    </js-module>
+
+    <platform name="android">
+        <config-file parent="/*" target="res/xml/config.xml">
+            <feature name="ReadNFC">
+                <param name="android-package" value="cordova.plugin.read.nfc.ReadNFC" />
+            </feature>
+        </config-file>
+        <config-file parent="/*" target="AndroidManifest.xml" />
+        <source-file src="src/android/ReadNFC.java" target-dir="src/cordova/plugin/read/nfc/ReadNFC" />
+    </platform>
+
+    <platform name="ios">
+        <config-file parent="/*" target="config.xml">
+            <feature name="ReadNFC">
+                <param name="ios-package" value="ReadNFC" />
+            </feature>
+        </config-file>
+        <source-file src="src/ios/ReadNFC.m" />
+    </platform>
+
+</plugin>
