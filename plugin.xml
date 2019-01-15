@@ -7,7 +7,7 @@
     <name>ReadNFC</name>
 
     <js-module name="ReadNFC" src="www/ReadNFC.js">
-        <clobbers target="cordova.plugins.ReadNFC" />
+        <clobbers target="ReadNFC" />
     </js-module>
 
     <platform name="android">
